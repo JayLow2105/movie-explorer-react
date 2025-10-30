@@ -1,0 +1,80 @@
+body {
+font-family: 'Arial', sans-serif;
+background-color: #1e2a3a;
+color: black;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+header {
+padding: 30px;
+background-color: #273b64;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+font-size: 35px;
+}
+.search-bar-container {
+background-color: #243352;
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+.search-bar {
+display: flex;
+gap: 10px;
+}
+input, select {
+padding: 8px 12px;
+font-size: 14px;
+width: 250px;
+height: 36px;
+border-radius: 5px;
+border: 1px solid #ccc;
+background-color: white;
+color: black;
+box-sizing: border-box;
+}
+#movie-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+.movie {
+background-color: #ffffff;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+transition: transform 0.3s ease-in-out;
+}
+.movie:hover {
+transform: scale(1.05);
+}
+.movie img {
+width: 100%;
+border-radius: 10px;
+}
+.pagination {
+margin: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+}
+button {
+padding: 10px 15px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+background-color: #379dd7;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+background-color: #e67e22;
+}
